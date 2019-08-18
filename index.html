@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google font `Roboto Mono` -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,700&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <!-- Vendors files -->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+
+    <!-- Resources files -->
+    <link rel="stylesheet" href="resources/font/style.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+    <title>BLUEASY</title>
+</head>
+
+<body>
+    
+    <!-- Header section -->
+
+    <header id="home">
+
+        <!-- Top navigation -->
+        <nav>
+            <div class="row">
+                <a href="#home" class="logo">
+                    Blu<span>e</span>asy
+                </a>
+                <ul class="main-nav">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span onclick="openNav()">&#9776;</span>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void()" onclick="closeNav()" class="closebtn">&times;</a>
+                        <div class="overlay-content">
+                            <a onclick="closeNav()" href="#home">HOME</a>
+                            <a onclick="closeNav()" href="#service">Services</a>
+                            <a onclick="closeNav()" href="#portfolio">portfolio</a>
+                            <a onclick="closeNav()" href="#about">About</a>
+                            <a onclick="closeNav()" href="#contact">CONTACT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero text -->
+        <div class="row">
+            <div class="hero-text-box">
+                <h1>
+                    <span>“I’m looking for the unexpected.</span>
+                    <br>
+                    <span>I’m looking for things I’ve never seen before.”</span>
+                </h1>
+            </div>
+        </div>
+        <div class="js--services-section"></div>
+    </header>
+
+    <!-- End of header section -->
+
+    <!-- Services section -->
+
+    <section class="services-section" id="services">
+        <div class="row">
+            <h2>Services</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_4">
+                <div class="icon">
+                    <i class="fas fa-coffee"></i>
+                </div>
+                <h3>coffee</h3>
+                <p class="little-description">
+                    Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll 
+                    liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. 
+                    Tiramisu applicake jujubes.
+                </p>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="icon">
+                    <i class="fas fa-coffee"></i>
+                </div>
+                <h3>Instant</h3>
+                <p class="little-description">
+                    Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll 
+                    liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. 
+                    Tiramisu applicake jujubes.
+                </p>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="icon">
+                    <i class="fas fa-coffee"></i>
+                </div>
+                <h3>Serious</h3>
+                <p class="little-description">
+                    Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll 
+                    liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. 
+                    Tiramisu applicake jujubes.
+                </p>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="icon">
+                    <i class="fas fa-coffee"></i>
+                </div>
+                <h3>Frame</h3>
+                <p class="little-description">
+                    Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll 
+                    liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. 
+                    Tiramisu applicake jujubes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of services section -->
+
+    <!-- Portfolio section -->
+
+    <section class="portfolio-section" id="portfolio">
+        <div class="row portfolio-head">
+            <div class="col span_1_of_2">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="col span_1_of_2">
+                <div class="portfolio-filter">
+                    <button class="active-btn">All</button>
+                    <button>Panoramas</button>
+                    <button>Portraits</button>
+                    <button>Macro</button>
+                    <button>Journal</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_4">
+                <div class="image-box">
+                    <img src="resources/img/img_1.jpg" alt="mountain">
+                    <div class="hover-overlay">
+                        <div class="hover-button">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="image-box">
+                    <img src="resources/img/img_1.jpg" alt="mountain">
+                    <div class="hover-overlay">
+                        <div class="hover-button">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="image-box">
+                    <img src="resources/img/img_1.jpg" alt="mountain">
+                    <div class="hover-overlay">
+                        <div class="hover-button">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="image-box">
+                    <img src="resources/img/img_1.jpg" alt="mountain">
+                    <div class="hover-overlay">
+                        <div class="hover-button">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="image-box">
+                    <img src="resources/img/img_1.jpg" alt="mountain">
+                    <div class="hover-overlay">
+                        <div class="hover-button">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="image-box">
+                    <img src="resources/img/img_1.jpg" alt="mountain">
+                    <div class="hover-overlay">
+                        <div class="hover-button">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="image-box">
+                    <img src="resources/img/img_1.jpg" alt="mountain">
+                    <div class="hover-overlay">
+                        <div class="hover-button">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="image-box">
+                    <img src="resources/img/img_1.jpg" alt="mountain">
+                    <div class="hover-overlay">
+                        <div class="hover-button">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of portfolio section -->
+
+    <!-- Just default section -->
+
+    <section class="default-section">
+        <div class="row">
+            <div class="col span_1_of_2">
+                <h2>Just default section</h2>
+                <p class="little-description">
+                    Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi 
+                    bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé 
+                    cotton candy dessert candy ice cream wafer gummies cheesecake brownie.
+                </p>
+                <p class="little-description">
+                    Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate 
+                    cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. 
+                    Cupcake marzipan oat cake bonbon I love candy canes toffee.
+                </p>
+            </div>
+            <div class="col span_1_of_2">
+                    <iframe src="https://www.youtube.com/embed/kfrkiYXTiPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of just default section -->
+
+    <!-- Twitter section -->
+
+    <section class="twitter-section">
+        <div class="row">
+            <div class="col span_1_of_2">
+                <h2>Twitter</h2>
+            </div>
+            <div class="col span_1_of_2">
+                <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3>
+                Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. 
+                Chocolate oat cake <span>@cheesecake</span> tootsie roll.
+            </h3>
+        </div>
+    </section>
+
+    <!-- End of twitter section -->
+
+    <!-- About section -->
+
+    <section class="about-section" id="about">
+        <div class="row">
+            <h2>Who is John doe?</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_2 left-side">
+                <p class="little-description">
+                    Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi 
+                    bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton 
+                    candy dessert candy ice cream wafer gummies cheesecake brownie.
+                </p>
+                <p class="little-description">
+                    Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake 
+                    I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake 
+                    marzipan oat cake bonbon I love candy canes toffee.
+                </p>
+            </div>
+            <div class="col span_1_of_2 right-side">
+                <p class="little-description">
+                    Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame 
+                    snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. 
+                    Cake toffee pie bear claw pastry.
+                </p>
+                <div class="social-links">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fas fa-coffee"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fas fa-coffee"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of about section -->
+
+    <!-- Testimonial section -->
+
+    <section class="testimonial-section">
+        <div class="row">
+            <div class="col span_1_of_2">
+                <h2>Testimonial</h2>
+            </div>
+            <div class="col span_1_of_2">
+                <div class="icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3>
+                Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow 
+                wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet 
+                roll jelly-o.
+            </h3>
+            <div class="center-text-mobile">
+                    <span>- Walter White</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of testiomonial section -->
+
+    <!-- Contact section -->
+
+    <section class="contact-section" id="contact">
+        <div class="row">
+            <h2>Contact</h2>
+        </div>
+        <div class="row">
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="col span_1_of_2">
+                        <span>Name</span><br>
+                        <input type="text" name="Name" required><br>
+                        <span>Email</span><br>
+                        <input type="email" name="E-mail" required>
+                    </div>
+                    <div class="col span_1_of_2">
+                        <p class="little-description">
+                            Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate 
+                            bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake 
+                            chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa 
+                            chups.
+                        </p>
+                        <p class="little-description">
+                            Linda Newman<br>
+                            W325 State Road 123<br>
+                            Mondovi, WI(Wisconsin) 98746-54321<br>
+                            (715) 946 - 1234
+                        </p>
+                    </div>
+                    <div class="col span_2_of_2">
+                        <span>Message</span>
+                        <textarea name="Message" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="col span_2_of_2">
+                        <input type="submit" value="SEND MESSAGE" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of contact section -->
+
+    <!-- Footer section -->
+
+    <footer class="footer-section">
+        <div class="row">
+            <div class="col span_1_of_2">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li>|</li>
+                    <li><a href="#services">Services</a></li>
+                    <li>|</li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li>|</li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col span_1_of_2 text-right">
+                <span>2013</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End of footer section -->
+
+    <!-- JS FILES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/main.js"></script>
+</body>
+</html>

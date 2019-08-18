@@ -1,0 +1,565 @@
+/* +=======================+
+    Global setup
+   +=======================+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Segoe UI Regular';
+    text-rendering: optimizeLegibility;
+}
+
+/* +=======================+
+    Resuable components
+   +=======================+
+*/
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 6.5rem 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    /* color: #fff; */
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    height: .2rem;
+    background: #fff;
+    width: 5.2rem;
+    margin-top: .5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+}
+
+.little-description {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.icon {
+    text-align: right;
+    font-size: 2rem;
+}
+
+span {
+    font-size: 1.2rem;
+}
+
+.left-side {
+    padding-right: 5rem;
+}
+
+.right-side {
+    padding-left: 5rem;
+}
+
+.btn {
+    /* width: 25rem; */
+    padding: 1.5rem 10rem;
+    background: #4bcaff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* +=======================+
+    Header
+   +=======================+
+*/
+
+header {
+    /* background: #425059; */
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/header_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-transform: uppercase;
+    position: relative;
+    height: 85vh;
+}
+
+nav {
+    background: rgba(67, 77, 85, 0.8);
+}
+
+.logo:link,
+.logo:visited {
+    font-size: 4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin: 3rem 0;
+    float: left;
+}
+
+.logo span {
+    color: #50aaf3;
+    font-size: 4rem;
+}
+
+.main-nav {
+    float: right;
+}
+
+.main-nav li {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 4rem;
+    margin-left: .2rem;
+    padding: .4rem 1.6rem;
+    border: .2rem solid transparent;
+    display: inline-block;
+}
+
+.main-nav a:hover {
+    color: #50aaf3;
+    border: .2rem solid #50aaf3;
+}
+
+.main-nav .active a {
+    color: #50aaf3;
+    border: .2rem solid #50aaf3;
+}
+
+/* Sticky navigation */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: #434d55;
+    margin: 0;
+    box-shadow: 0 .15rem 0rem rgba(255, 255, 255, 0.7);
+}
+
+.sticky .logo {
+    margin: .5rem 0;
+}
+
+.sticky li a:link,
+.sticky li a:visited {
+    margin-top: 1.7rem;
+}
+
+.sticky .mobile-menu {
+    margin-top: 1rem;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    color: #fff;
+    font-size: 3rem;
+    float: right;
+    margin-top: 3rem;
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu span {
+    font-size: 3rem;
+}
+
+.mobile-menu span:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.904);
+    z-index : 1;
+    overflow-x: hidden;
+    transition: .5s;
+    width: 0%;
+}
+
+.closebtn:link,
+.closebtn:visited {
+    color: #fff;
+    font-size: 5rem;
+    float: right;
+    margin: 1rem 1.5rem;
+    text-decoration: none;
+}
+
+.overlay-content {
+    padding: 10rem 0;
+    text-align: center;
+    font-size: 3.5rem;
+    height: 80vh;
+}
+
+.overlay-content a:link,
+.overlay-content a:visited {
+    text-decoration: none;
+    color: #999;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.overlay-content a:hover {
+    color: #fff;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 114rem;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.hero-text-box h1 span {
+    background: rgba(67, 77, 85, 0.8);
+    font-size: 2.8rem;
+    font-weight: 100;
+}
+
+/* +=======================+
+    Services section
+   +=======================+
+*/
+
+.services-section {
+    background: #4bcaff;
+    color: #fff;
+}
+
+.services-section .span_1_of_4 {
+    padding-right: 2rem;
+}
+
+.services-section .icon {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    color: #fff;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* +=======================+
+    Portfolio section
+   +=======================+
+*/
+
+.portfolio-section {
+    color: black;
+}
+
+.portfolio-head {
+    margin-bottom: 2.5rem;
+}
+
+.portfolio-section h2::after {
+    background: black;
+}
+
+.portfolio-section .portfolio-filter {
+    text-align: right;
+}
+
+.portfolio-filter button {
+    border: .2rem solid transparent;
+    background: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+}
+
+.portfolio-filter button:hover {
+    cursor: pointer;
+    color: #50aaf3;
+    border: .2rem solid #50aaf3;
+}
+
+.portfolio-filter .active-btn {
+    color: #50aaf3;
+    border: .2rem solid #50aaf3;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.portfolio-section .span_1_of_4:nth-child(5) {
+    margin-left: 0;
+}
+
+.portfolio-section .image-box {
+    margin-bottom: 2rem;
+}
+
+.image-box .hover-overlay {
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    /* left: 40%; */
+    z-index: -1;
+    background: rgba(0, 0, 0, .8);
+    width: 25rem;
+    height: 25rem;
+    /* opacity: 0; */
+}
+
+.hover-overlay .hover-button {
+    margin-top: 40%;
+}
+
+.hover-overlay span {
+    font-size: 4rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+.image-box:hover .hover-overlay {
+    /* opacity: 1; */
+    z-index: 1;
+}
+
+/* +=======================+
+    Default section
+   +=======================+
+*/
+
+.default-section {
+    background: #515f67;
+    color: #fff;
+}
+
+.default-section h2 {
+    margin-bottom: 3rem;
+}
+
+.default-section .little-description {
+    padding-right: 5rem;
+    margin-top: 2rem;
+}
+
+.default-section iframe {
+    margin-top: 2rem;
+    width: 80%;
+    height: 20rem;
+    margin-left: 20%;
+}
+
+/* +=======================+
+    Twitter section
+   +=======================+
+*/
+
+.twitter-section {
+    background: #4bcaff;
+    color: #fff;
+}
+
+.twitter-section h3 {
+    margin-top: 1.5rem;
+}
+
+.twitter-section h3 span {
+    font-weight: 700;
+}
+
+/* +=======================+
+    About section
+   +=======================+
+*/
+
+.about-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/header_bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.about-section h2 {
+    margin-bottom: 5rem;
+}
+
+.about-section .little-description:first-child {
+    margin-bottom: 3rem;
+}
+
+.social-links {
+    margin-top: 3.8rem;
+    margin-bottom: 8rem;
+}
+
+.social-links ul li {
+    margin-right: 2rem;
+}
+
+.social-links a:link,
+.social-links a:visited {
+    color: #fff;
+    border: .2rem solid #fff;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    /* margin-right: 2rem; */
+}
+
+.social-links a:hover {
+    color: #4bcaff;
+    border-color: #4bcaff;
+}
+
+/* +=======================+
+    Testimonial section
+   +=======================+
+*/
+
+.testimonial-section h2::after {
+    background: black;
+}
+
+.testimonial-section h3 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-section span {
+    color: #4bcaff;
+}
+
+/* +=======================+
+    Contact section
+   +=======================+
+*/
+
+.contact-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/header_bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.contact-section h2 {
+    margin-bottom: 3rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 80%;
+    margin-top: .8rem;
+    margin-bottom: 2.5rem;
+    background: transparent;
+    border: .1rem solid #fff;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.contact-form span {
+    text-transform: uppercase;
+}
+
+.contact-form .little-description {
+    margin-top: 1.5rem;
+    margin-bottom: .8rem;
+}
+
+.contact-form .span_2_of_2 {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.contact-form textarea {
+    width: 100%;
+}
+
+/* +=======================+
+    Footer section
+   +=======================+
+*/
+
+.footer-section {
+    background: rgba(67, 77, 85, 0.8);
+    padding: 2rem 0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.footer-section .text-right {
+    text-align: right;
+}
+
+.footer-section li {
+    margin: .5rem;
+}
+
+.footer-section li:first-child {
+    margin-left: 0;
+}
+
+.footer-section li a:link,
+.footer-section li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section li a:hover {
+    color: #4bcaff;
+}
+
